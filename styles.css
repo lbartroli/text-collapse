@@ -1,0 +1,36 @@
+.help-text-content {
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 600;
+  overflow: hidden;
+  position: relative;
+  transition: height .1s ease-in;
+}
+
+.help-text-content .show-more,
+.help-text-content .show-less {
+  text-align: right;
+}
+
+.help-text-content .show-more {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 1);
+}
+
+.help-text-content .show-less {
+  position: inherit;
+}
+
+.help-text-content .show-more::before {
+  position: absolute;
+  content: '\00a0';
+  display: inline-block;
+  width: 50px;
+  left: -50px;
+  cursor: default;
+  pointer-events: none;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+}

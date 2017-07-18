@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./text-collapse.js"></script>
+    <title>Text-collapse</title>
+</head>
+<body>
+    <div class="row">
+    <div class="col-xs-12 help-text">
+        <div class="help-text-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis dictum dui, efficitur fringilla metus luctus ac. Integer mattis sodales neque, sed iaculis orci tempus quis. Sed justo urna, commodo sed imperdiet pretium, tincidunt in neque. Etiam quis cursus odio. Phasellus lacus neque, placerat in dapibus sed, scelerisque eget sem. Quisque mi tortor, ultricies a vulputate tempus, ultricies at sapien. Fusce non dui vehicula, tristique sem sed, mattis odio. Integer vitae imperdiet ante.
+          <a href="#" class="show-more"> ...Show More</a>
+          <a href="#" class="show-less"> Show less</a>
+        </div>
+    </div>
+
+    <script>
+        $(function(){
+            new TextCollapse({lines: 2});
+        });
+    </script>
+</div> 
+</body>
+</html>
